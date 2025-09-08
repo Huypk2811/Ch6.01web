@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: ch6-email
+    env: java
+    plan: free
+    buildCommand: mvn clean package
+    startCommand: java -jar target/*.war

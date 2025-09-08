@@ -1,11 +1,10 @@
 services:
   - type: web
-    name: email-list-app
+    name: ch06-ex1-email
     env: java
     plan: free
-    buildCommand: ./mvnw clean package
-    startCommand: java -jar target/email-list-1.0-SNAPSHOT.war
-    runtime: java
+    buildCommand: mvn clean package
+    startCommand: java -jar target/ch06_ex1_email.war
     envVars:
       - key: JAVA_VERSION
         value: 17
